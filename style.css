@@ -1,0 +1,37 @@
+/* Centreer alleen het article-element */
+/* Groot artikel gecentreerd en groter */
+.main-article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    margin-bottom: 30px;
+}
+
+.main-article article {
+    width: 60%;
+    padding: 30px;
+    background-color: #f0f8ff;
+    text-align: center;
+    font-size: 1.3rem;
+    border: 2px solid #0077cc;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Kleinere artikelen in een 2x2 grid */
+.sub-articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 20px 40px;
+    justify-items: center;
+}
+
+.sub-articles article {
+    width: 90%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
